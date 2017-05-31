@@ -1,0 +1,331 @@
+$leftrightborder: none dashed none dashed;
+$rightborder: none dashed none none;
+$bottomborder: none none dashed none;
+$bottomrightborder: none dashed dashed none;
+
+@import 'variables';
+$lgColor: lighten($bgColor, 10%);
+$borColor: lighten($bgColor, 50%);
+@mixin gradient($lgc) 
+{
+    background: $bgColor; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($lgc, $bgColor); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($lgc, $bgColor); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($lgc, $bgColor); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($lgc, $bgColor); /* Standard syntax */
+}
+
+
+@mixin fade($num:6, $fade:1, $visible:2) {
+   $a: 100 / (($fade + $visible) * $num);
+   @keyframes fade {
+    0%   { opacity: 0; }
+    #{$a * $fade}%   { opacity: 1; }
+    #{$a * ($fade + $visible)}%  { opacity: 1; }
+    #{$a * ($fade + $visible + $fade)}%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  animation-name: fade; 
+  animation-duration: (($fade + $visible) * $num) + s; 
+  animation-iteration-count: infinite; 
+  
+  @for $i from 1 through $num {
+    &:nth-child(#{$i}) {
+      animation-delay: (#{($fade + $visible) * ($i - 1)}) + s;
+    }
+  }
+}
+
+
+            
+.ridofpadding
+{
+    padding: 0px;
+}
+/*
+.logo
+{
+    text-align: center;
+    @include gradient($lgColor);
+    margin-bottom: 0px;
+}
+*/
+
+.logo
+{
+   background-image:url('../images/logos/gray_logo.png');
+   background-repeat:no-repeat;
+   background-position:50% 100%;
+   height:74px;
+   width:100%;
+   min-width:372px;
+   text-indent:-10000px;
+   margin:0;
+   padding-top: 40px;
+}
+header { text-align:center;}
+
+.logom
+{
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    color: $fgColor;
+} 
+
+body 
+{
+    @include gradient($lgColor);
+    color: $fgColor;
+}
+
+
+/* ----------- navigation ------------- */
+.navbar
+{
+    background-color: $bgColor;
+    border-color: $bgColor;
+    padding-top:2px;
+    padding-bottom:0px;
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      
+      display: inline-block;
+    }
+  }
+
+ul.nav
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul.nav li
+{
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 125%;
+}
+.nav>li>a
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    //white-space:nowrap
+    display: block;
+    &:hover
+    {
+        background-color: $lgColor;
+        color: $fgColor;
+    }
+    
+}
+/* ------------ end of navigation ---------- */
+
+
+main
+{
+    margin: 0 10% 5% 10%;
+    line-spacing:120%;
+}
+
+img
+{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    text:center
+}
+
+
+
+
+#Info, #Services
+{
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 25px;
+    border: 2px solid $lgColor;
+    text-align: center;
+}
+
+
+#serviceSection
+{
+    width: 100%;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#Services
+{
+    max-width: 60%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 5%;
+    ul
+    {
+      text-align: left;
+    }
+}
+
+#Info ul
+{
+    list-style:none;
+    text-align: left;
+}
+
+
+form
+{
+    max-width:90%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.panel-title
+{text-align:center;}
+
+
+article 
+{
+    box-shadow:none;
+    border-color: $borColor;
+}
+
+.icon img
+{
+    display:inline;
+}
+
+#Offices
+{
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 25px;
+    border: 2px solid $lgColor;
+}
+
+#newOffices
+{
+    position: relative;
+    max-width:600px;
+    margin: 0 auto;
+}
+
+#slider
+{
+    padding-top:2%;
+    text-align: center;
+    margin: 0 auto;
+    height: 320px;
+}
+
+.slideshow img
+{
+    width:320px;
+}
+
+.fadein img
+{
+    position:absolute; left:calc(50% - 200px); opacity:0;
+    @include fade($num:6, $fade:3, $visible:3);
+}
+
+#pdf
+{
+    color: #c10047;
+}
+
+#tests *
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.test
+{
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 25px;
+    border: 2px solid $lgColor;
+    margin: 2em;
+    padding: 2% 5%;
+    width: 80%;
+}
+
+.test-alt
+{
+    background-color: rgba(210,230,250,0.45);
+    border-radius: 25px;
+    border: 2px solid $lgColor;
+    margin: 2em;
+    padding: 2% 5%;
+    width: 80%;
+}
+
+.footer
+{
+    text-align:center;
+    float:none;
+    clear: both;
+}
+
+
+    ///Media Querys -------
+    ///Borders-----
+
+        @media only screen and (max-width: 768px)
+        {
+
+            ul.nav
+            {
+                display: block;
+            }
+
+            ul.nav li
+            {
+                width:100%;
+            }
+
+            body
+            {
+                text-align: center;
+            }
+
+            #serviceList, #infoList
+            {
+                text-align: left;
+            }
+            
+            .logom
+            {
+                display: inline;
+                text-align: left;
+            }
+
+            .logo
+            {
+                display: none;
+            }
+            .test, .test-alt
+            {
+                padding: 2% 5%;
+                width: 95%;
+            }
+            #Services
+            {
+                max-width:90%
+            }
+            
+            img
+            {
+                max-width:80%;
+            }
+
+            
+        }

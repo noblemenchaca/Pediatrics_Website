@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<div class="ridofpadding container-fluid">
+    <header id='top'>
+      <h1 class="logo">ISTA Pediatrics</h1>
+      <div id='phoneNum'>
+        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+        <span class="sr-only">Phone Number:</span>
+        520-555-1234
+      </div>
+     </header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        
+      </button>
+      <h1 class="logom">ISTA Pediatrics Mobile</h1>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills">
+                  <li class='navLink'><a id='homeLink' href='index.html'>
+                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                  <li class='navLink'><a id='contactLink' href='contact.html'>
+                  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Contact Us</a></li>
+                  <li class='navLink'><a id='staffLink' href='staff.html'>
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Our Staff</a></li>
+                  <li class='navLink'><a id='servicesLink' href='services.html'>
+                  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Services</a></li>
+                  <li class='navLink'><a id='newsLink' href='news.html'>
+                  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> News</a></li>
+                  <li class='navLink'><a id='testimonialsLink' href='testimonials.html'>
+                  <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Testimonials</a></li>
+                  
+            </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <main>
+    <h2>News</h2>
+      <section class="bootstrap-overwrite row">
+        <article id='Offices'>
+          <h2>Our Renovated Offices</h2>
+          <img src='images/waitingRoom.jpg' alt="Our new waiting room" />
+          <p id='newOffices'>
+            We've renovated! Here at ISTA Pediatrics we believe in providing the
+            best care and support for our patients and families. To do this, we have
+            recently undergone a complete renovation of our exam rooms and waiting 
+            areas to provide comfort and enjoyment at your next visit with us.</br>
+            <button data-toggle="collapse" data-target="#slider">View Slideshow</button>
+            <div id="slider" class="fadein collapse">
+              <img src='images/rooms/waitingRoom.jpg' alt="Our new waiting room" class="slideshow"/>
+              <img src='images/rooms/waitingRoom2.jpg' alt="another new waiting room" class="slideshow" />
+              <img src='images/rooms/examRoom.jpg' alt="Our new exam room" class="slideshow" />
+              <img src='images/rooms/examRoom2.jpg' alt="another exam room" class="slideshow" />
+              <img src='images/rooms/examRoom3.jpg' alt="one more exam room" class="slideshow" />
+              <img src='images/rooms/examRoom4.jpg' alt="and yet another exam room" class="slideshow" />
+            </div>
+          </p>
+        </article>
+      </section>
+
+
+      <section class="bootstrap-overwrite row">
+        <article  id='Flu'>
+          <h2>Flu Statistics</h2>
+          <img src='images/patient9.jpg' alt=" A doctor and an infant " />
+          <p>
+            In the Northern hemisphere, winter is the time for flu, but the exact timing and 
+            duration of flu seasons vary. While seasonal flu outbreaks can happen as early as 
+            October, most of the time flu activity peaks between December and February, although 
+            activity can last as late as May. The figure below shows peak flu activity for the 
+            United States by month for the 1982-83 through 2013-2014 flu seasons.
+          </p>
+          <p>
+            The seasonal flu vaccine protects against the influenza viruses that research 
+            indicates will be most common during the upcoming season. Traditional flu vaccines 
+            (called “trivalent” vaccines) are made to protect against three flu viruses; an 
+            influenza A (H1N1) virus, an influenza A (H3N2) virus, and an influenza B virus. In 
+            addition, there are flu vaccines made to protect against four flu viruses (called 
+            “quadrivalent” vaccines). These vaccines protect against the same three viruses as 
+            the trivalent vaccine and an additional B virus.
+          </p>
+          <p>
+            Flu shots can be given to children 6 months and older. The Center for Disease Control 
+            recommends that you get your children vaccinated each year!
+          </p>
+          <a id='pdf' href='fluStatistics.pdf'>
+          <span class="glyphicon glyphicon-save" aria-hidden="true"></span> Click here to download this article.</a>
+        </article>
+      </section>
+
+    </main>
+    <!-- End main element -->
+
+  <footer class="footer">
+    <a href="https://www.abp.org/" class='icon'>
+      <img src='images/icons/abplogo.png' alt="american board of pediatrics logo" />
+    </a>
+    <a href="https://www.ama-assn.org/" class='icon'>
+      <img src='images/icons/amalogo.png' alt="american medical assosciation logo" />
+    </a>
+  </footer>
+  </body>
+
+
+</html>
+

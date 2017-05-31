@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<div class="ridofpadding container-fluid">
+    <header id='top'>
+      <h1 class="logo">ISTA Pediatrics</h1>
+          <div id='phoneNum'>
+          <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+          <span class="sr-only">Phone Number:</span>
+          520-555-1234
+          </div>
+    </header>
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          <h1 class="logom">ISTA Pediatrics</h1>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills">
+                  <li class='navLink'><a id='homeLink' href='index.html'>
+                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                  <li class='navLink'><a id='contactLink' href='contact.html'>
+                  <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Contact Us</a></li>
+                  <li class='navLink'><a id='staffLink' href='staff.html'>
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Our Staff</a></li>
+                  <li class='navLink'><a id='servicesLink' href='services.html'>
+                  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Services</a></li>
+                  <li class='navLink'><a id='newsLink' href='news.html'>
+                  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> News</a></li>
+                  <li class='navLink'><a id='testimonialsLink' href='testimonials.html'>
+                  <span class="glyphicon glyphicon-book" aria-hidden="true"></span> Testimonials</a></li>
+                  
+            </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <main>
+      <section class="" id="officeInfo">
+        <article class="bootstrap-overwrite col-sm-10 col-md-8 col-lg-6"id='Info'>
+          <h2>Office Information</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.63609819954!2d-110.99821368532692!3d32.2140349811456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d670d48fc07c7b%3A0x56c03ee739c6c38d!2s1501+Sentinel+Peak+Rd+S%2C+Tucson%2C+AZ+85745!5e0!3m2!1sen!2sus!4v1480913600190" width=85% height='400' frameborder="0" style="border:0" allowfullscreen></iframe>
+          <ul id="infoList">
+            <li><strong>ISTA Pediatrics</strong></li>
+            <li><strong>1501 W Sentinel Peak Rd S</strong></li>
+            <li><strong>Tucson, AZ 85745</strong></li>
+            <li><strong>520-555-1234</strong></li>
+            <li><strong>FAX: 520-555-5678</strong></li>
+            <li><strong>Office Hours: Monday – Friday, 9am-6pm.</strong></li>
+            <li><em>Call for appointments before 9am.</em></li>
+          </ul>
+        </article>
+
+        <article class="bootstrap-overwrite col-sm-10 col-md-8 col-lg-6"id='Form'>
+            <h2>Contact Us</h2>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleTextarea">Feedback or Questions</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              </div>
+
+              <fieldset class="form-group">
+                <legend>What are you submitting?</legend>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                    Customer feedback
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Customer question(s)
+                  </label>
+                </div>
+                <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Other
+                  </label>
+                </div>
+
+              </fieldset>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input">
+                  Subscribe to email updates
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </article> <!--form-->
+
+      </section> <!--row-->
+    </main>
+    <!-- End main element -->
+
+  <footer class="footer">
+    <a href="https://www.abp.org/" class='icon'>
+      <img src='images/icons/abplogo.png' alt="american board of pediatrics logo" />
+    </a>
+    <a href="https://www.ama-assn.org/" class='icon'>
+      <img src='images/icons/amalogo.png' alt="american medical assosciation logo" />
+    </a>
+  </footer>
+  </body>
+
+
+</html>
+
